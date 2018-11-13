@@ -1,7 +1,9 @@
-####Scala Game Of Life
+### Java Game Of Life
+
 
 To run tests from command line:
 
+
 ```
-sbt test
+mvn test
 ```
