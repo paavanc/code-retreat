@@ -1,3 +1,3 @@
-const isAlive = () => true;
+const isAlive = () => false;
 
 export { isAlive };
