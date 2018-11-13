@@ -1,9 +1,5 @@
 'use strict'
 
-const GameOfLife = {
-  isAlive: function() {
-    return false;
-  }
-}
+const isAlive = () => false;
 
-module.exports = GameOfLife;
+module.exports = { isAlive };
