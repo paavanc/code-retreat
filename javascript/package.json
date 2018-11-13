@@ -1,0 +1,14 @@
+{
+  "name": "GameOfLife",
+  "version": "1.0.0",
+  "description": "RN Code Retreat Game Of Life",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha lib/**/**.spec.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
