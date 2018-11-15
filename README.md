@@ -1,4 +1,4 @@
-###Code Retreat project.
+## Code Retreat project.
 
 * [Conway's Game of Life Rules](https://docs.google.com/document/d/1NmoeDNgfEKAYD7Kz-ITcS1eEyS923-wZjVStaShetQU/edit)
 * [Four elements of simple design](https://docs.google.com/document/d/1d9hidMBt4F5Mmwq80-XKmgtDGV11cqz6pp-i819jJJE/edit)
