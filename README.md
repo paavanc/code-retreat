@@ -12,7 +12,7 @@ Try mixing object oriented one round, functional in a different round.
 
 2. [No Primitives](https://docs.google.com/document/d/1RSvUaGhxf8Gc46wEVAGgyGRDAE8YSZrQwIC70UukxsE/edit)
    Clean Code. Focus on naming, no Conditinals. switches and pattern matching is a form of conditional (kinda).
-    Only four (six in static typed languages) lines per method. Immutables only, please
+    Only four lines per method (Bonus line for java, total of 5).
 3. [Silent Ping Pong Pairing](https://docs.google.com/document/d/16_8WcKliYtPu_71uukiZDPLB65MxcZCkycjIVQ1Ejtw/edit) All intent is expressed through tests.
 4. [Baby Steps](https://docs.google.com/document/d/1Q6MTVWa88xEyDkv4jUq5tNbypSvPnthbA3shmB28rbc/edit)
 5. [Evil Pair](https://docs.google.com/document/d/1WcAUdyrfTtmU2KYZacmaTNZgk_sB6eZIv13DSyUUSOU/edit)
