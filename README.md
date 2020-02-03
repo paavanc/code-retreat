@@ -10,14 +10,14 @@ Try mixing object oriented one round, functional in a different round.
 
 1. Free Form
 
-2. [No Primitives](https://docs.google.com/document/d/1RSvUaGhxf8Gc46wEVAGgyGRDAE8YSZrQwIC70UukxsE/edit)
-   Clean Code. Focus on naming, no Conditinals. switches and pattern matching is a form of conditional (kinda).
+2. Clean Code. Focus on naming, no Conditinals. switches and pattern matching is a form of conditional (kinda).
     Only four lines per method (Bonus line for java, total of 5).
 3. [Silent Ping Pong Pairing](https://docs.google.com/document/d/16_8WcKliYtPu_71uukiZDPLB65MxcZCkycjIVQ1Ejtw/edit) All intent is expressed through tests.
 4. [Baby Steps](https://docs.google.com/document/d/1Q6MTVWa88xEyDkv4jUq5tNbypSvPnthbA3shmB28rbc/edit)
 5. [Evil Pair](https://docs.google.com/document/d/1WcAUdyrfTtmU2KYZacmaTNZgk_sB6eZIv13DSyUUSOU/edit)
 
 Other Ideas
+* [No Primitives](https://docs.google.com/document/d/1RSvUaGhxf8Gc46wEVAGgyGRDAE8YSZrQwIC70UukxsE/edit)
 * No return value.
 * TDD as if you meant it
 * [Verb-Noun Naming](https://docs.google.com/document/d/1231bDylwm3IQ3mpLV4-sF_QYUoJeNM3ZnBROOgx11VE/edit)
