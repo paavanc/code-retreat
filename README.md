@@ -5,7 +5,6 @@
 
 
 ### Rounds
-After round one Immutability is assumed.
 Try mixing object oriented one round, functional in a different round.
 
 1. Free Form
