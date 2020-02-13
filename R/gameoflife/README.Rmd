@@ -20,41 +20,60 @@ knitr::opts_chunk$set(
 
 The goal of gameoflife is to ...
 
+## Development
+
+To load the package for development in RStudio or RStudio Server, create a new project in RStudio using the "Create Project from Version Control" option. Select "Git" and use the repository URL:
+
+`https://github.com/alexcodreanu86/code-retreat/`
+
+If you are using RStudio Server, you should "Create project as subdirectory of" `~/repos`.
+
+If you aren't an RStudio fan you can use `git clone`.
+
+To load the current state of the package for development, ensure that your working directory is set to `~/repos/code-retreat/R/gameoflife`, and call the following functions from the console:
+
+``` {r dev eval=FALSE}
+devtools::document() # this generates documentation from any markdown you have defined
+devtools::load_all() # this attaches the complete package namespace, including non-exported functions
+```
+
+Attaching the package using `load_all()` is preferable to assigning individual objects in the global environment during development.
+
+To run tests that you have defined with `testthat`, run:
+
+```{r test eval=FALSE}
+devtools::test() # this is a convenient wrapper for testthat::test_dir
+```
+
+## Dependencies
+
+You may be accustomed to writing scripts that attach third party packages using `library()`.
+
+In package development, you should specify dependencies by naming them in the DESCRIPTION file in the package root.
+
+Example:
+
+```{r imports eval=FALSE}
+Imports: 
+    dplyr
+    purrr
+```
+
+Objects exported by packages named `Imports` will not be made available directly to the package's users when your package is installed, but code in your own package can use them.
+
+`https://kbroman.org/pkg_primer/pages/depends.html` gives a good rundown of how to handle dependencies in package development.
+
 ## Installation
 
 You can install the released version of gameoflife from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
+``` {r gol1}
 install.packages("gameoflife")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
-``` r
+``` {r gol2}
 # install.packages("devtools")
 devtools::install_github("alexcodreanu86/code-retreat")
 ```
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-library(gameoflife)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
