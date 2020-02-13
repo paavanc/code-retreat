@@ -19,5 +19,7 @@ class GameOfLife:
     neighbors.remove((x,y))
     return len(neighbors.intersection(self.live_cords))
 
+  def get_will_live(self, x, y): 
+    return True
 
 
