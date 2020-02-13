@@ -34,5 +34,6 @@ def test_mutate():
 
     next = game.next()
     assert len(next) == 3
+    assert next == set([(0,1) , (-1,1) , (1,1)])
 
 
