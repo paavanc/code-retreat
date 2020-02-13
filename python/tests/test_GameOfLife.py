@@ -29,5 +29,10 @@ def test_will_live():
     
     assert not game.get_will_live(4,4)
 
+def test_mutate():
+    game = gameoflife.GameOfLife(set([(0,0) , (0,1) , (0,2)]))
+
+    next = game.next()
+    assert len(next) == 3
 
 
