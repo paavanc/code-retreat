@@ -24,4 +24,10 @@ def test_will_live():
     
     assert game.get_will_live(0,1)
 
+def test_will_live():
+    game = gameoflife.GameOfLife(set([(0,0) , (0,2) , (0,1)]))
+    
+    assert not game.get_will_live(4,4)
+
+
 

@@ -20,6 +20,8 @@ class GameOfLife:
     return len(neighbors.intersection(self.live_cords))
 
   def get_will_live(self, x, y): 
-    return True
+    is_live = (x,y) in self.live_cords
+    n_count = self.getNLive(self.getNine(x,y),x,y)
+    return (is_live and n_count ==2) or n_count == 3
 
 
