@@ -15,4 +15,9 @@ class GameOfLife:
         result.add((i,j))
     return result
 
+  def getNLive(self, neighbors, x, y):
+    neighbors.remove((x,y))
+    return len(neighbors.intersection(self.live_cords))
+
+
 

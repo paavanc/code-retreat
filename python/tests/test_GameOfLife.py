@@ -13,3 +13,8 @@ def test_getNine():
     neighbors = game.getNine(1,1)
     print(neighbors)
     assert neighbors == set([(0,0), (0,1) , (0,2), (1,0), (1,1) , (1,2), (2,0), (2,1) , (2,2)])
+
+def test_get_live_count():
+    game = gameoflife.GameOfLife(set([(0,0) , (0,2) , (1,1)]))
+    neighbors = game.getNine(1,1)
+    assert 2 == game.getNLive(neighbors, 1, 1)
